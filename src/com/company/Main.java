@@ -12,6 +12,20 @@ public class Main {
         System.out.println("Oppeasutus: " + alar_opilane.getOppeasutuse_nimi());
         System.out.println("\nHeikki:");
         System.out.println("Ettevotte nimi: " + heikki_tootaja.getEttevotte_nimi());
-        System.out.println("Kaal: " + heikki_tootaja.inimene.getPikkus());
+        System.out.println("Kaal: " + heikki_tootaja.inimene.getKaal());
+        heikki_tootaja.inimene.editKaal(120);
+        System.out.println("Kaal pärast kaalu muutmist: " + heikki_tootaja.inimene.getKaal());
+        System.out.println("Kehamassiindeks: " + heikki_tootaja.inimene.getBMI());
     }
 }
+/*
+Alar:
+Pikkus: 175
+Oppeasutus: TLÜ
+
+Heikki:
+Ettevotte nimi: Kitman
+Kaal: 90
+Kaal pärast kaalu muutmist: 120
+Kehamassiindeks: 0.003830316958728335
+ */
